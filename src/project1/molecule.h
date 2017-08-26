@@ -2,6 +2,8 @@
 #define MOLECULEH
 
 #include <string>
+#define ARMA_DONT_USE_WRAPPER
+
 #include <armadillo>
 
 using namespace std;

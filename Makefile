@@ -15,7 +15,7 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 CPPFLAGS ?= $(INC_FLAGS) -MMD -MP
 
 $(TARGET_EXEC): $(OBJS)
-	$(CC) $(OBJS) -o $@ $(LDFLAGS)
+	$(CC) $(OBJS) -o $@ $(LDFLAGS) -O2 -DARMA_DONT_USE_WRAPPER -DARMA_USE_BLAS -DARMA_USE_LAPACK -lopenblas -llapack
 
 # c++ source
 $(BUILD_DIR)/%.cpp.o: %.cpp

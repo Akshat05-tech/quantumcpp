@@ -2,6 +2,7 @@
 #include <numeric>
 #include <array>
 #include <cmath>
+#define ARMA_DONT_USE_WRAPPER
 #include <armadillo>
 
 using namespace arma;
